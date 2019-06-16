@@ -1,0 +1,15 @@
+div.wrapper.wrapper2
+    - const upName = data.name.toUpperCase();
+    p.hello hello! #{upName}
+    span#yo You!
+    img(src="dog.jpg", alt=`${data.name}`)
+h2
+    |  Hello
+    em  How are you
+
+
+// extends layout
+    block header
+        h2 Yo!
+    block content
+        p   Hello
